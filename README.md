@@ -1,4 +1,4 @@
-# segmentation-background-removal
+# background-removal
 
 This is a project on background removal in a video clip using deep learning.
 
