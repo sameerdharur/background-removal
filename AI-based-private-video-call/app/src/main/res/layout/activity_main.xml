@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:background="?attr/colorPrimaryDark"
+        android:padding="1dp"
+        android:text="AI based Private Video Call"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <io.fotoapparat.view.CameraView
+        android:id="@+id/camera_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text"></io.fotoapparat.view.CameraView>
+
+    <com.qualcomm.qti.snpedetector.OverlayRenderer
+        android:id="@+id/overlayRenderer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/camera_view"
+        app:layout_constraintEnd_toEndOf="@+id/camera_view"
+        app:layout_constraintStart_toStartOf="@+id/camera_view"
+        app:layout_constraintTop_toTopOf="@+id/camera_view" />
+
+    <Switch
+        android:id="@+id/privacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:text="ENABLE"
+        android:textColor="@android:color/white"
+        android:checked="true"
+        app:layout_constraintStart_toStartOf="@+id/text"
+        app:layout_constraintTop_toTopOf="@+id/text" />
+
+
+    <EditText
+        android:id="@+id/cover"
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+
+        android:background="@android:color/transparent"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:gravity="center_vertical|center_horizontal"
+        android:inputType="text"
+        android:maxLength="20"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!--<ToggleButton-->
+    <!--android:id="@+id/emoji1"-->
+    <!--android:layout_width="60dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="ToggleButton"-->
+    <!--tools:layout_editor_absoluteX="0dp"-->
+    <!--tools:layout_editor_absoluteY="0dp" />-->
+
+    <!--<ToggleButton-->
+    <!--android:id="@+id/emoji2"-->
+    <!--android:layout_width="60dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="ToggleButton"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/emoji1"-->
+
+    <!--tools:layout_editor_absoluteX="0dp"-->
+    <!--tools:layout_editor_absoluteY="0dp" />-->
+    <!--<ToggleButton-->
+    <!--android:id="@+id/emoji3"-->
+    <!--android:layout_width="60dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="ToggleButton"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/emoji2"-->
+
+    <!--tools:layout_editor_absoluteX="0dp"-->
+    <!--tools:layout_editor_absoluteY="0dp" />-->
+    <!--<ToggleButton-->
+    <!--android:id="@+id/emoji4"-->
+    <!--android:layout_width="60dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="ToggleButton"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/emoji3"-->
+
+    <!--tools:layout_editor_absoluteX="0dp"-->
+    <!--tools:layout_editor_absoluteY="0dp" />-->
+
+    <!--<ToggleButton-->
+    <!--android:id="@+id/emoji5"-->
+    <!--android:layout_width="60dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="ToggleButton"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/emoji1"-->
+
+    <!--tools:layout_editor_absoluteX="0dp"-->
+    <!--tools:layout_editor_absoluteY="0dp" />-->
+    <!--<ToggleButton-->
+    <!--android:id="@+id/emoji6"-->
+    <!--android:layout_width="60dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="ToggleButton"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/emoji2"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/emoji5"-->
+    <!--tools:layout_editor_absoluteX="0dp"-->
+    <!--tools:layout_editor_absoluteY="0dp" />-->
+    <!--<ToggleButton-->
+    <!--android:id="@+id/emoji7"-->
+    <!--android:layout_width="60dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="ToggleButton"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/emoji3"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/emoji6"-->
+
+    <!--tools:layout_editor_absoluteX="0dp"-->
+    <!--tools:layout_editor_absoluteY="0dp" />-->
+    <!--<ToggleButton-->
+    <!--android:id="@+id/emoji8"-->
+    <!--android:layout_width="60dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="ToggleButton"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/emoji4"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/emoji7"-->
+    <!--tools:layout_editor_absoluteX="0dp"-->
+    <!--tools:layout_editor_absoluteY="0dp" />-->
+
+</android.support.constraint.ConstraintLayout>
