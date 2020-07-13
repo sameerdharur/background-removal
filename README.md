@@ -1,6 +1,6 @@
 # background-removal
 
-This is a project on background removal in a video clip using deep learning.
+Code from the submission titled 'User Privacy via Face Detection in a Video Call' to the Qualcomm India Maker Challenge 2018.
 
 The project was done on two platforms and versions - 
 
